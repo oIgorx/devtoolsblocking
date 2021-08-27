@@ -2,10 +2,10 @@ local Tunnel = module("vrp", "lib/Tunnel")
 local Proxy = module("vrp", "lib/Proxy")
 local Tools = module("vrp", "lib/Tools")
 
-func = Tunnel.getInterface("core_devtools")
+igor = Tunnel.getInterface("devtoolsblocking")
 
 
 
-RegisterNUICallback('dev_tools',function()
-   func.Punicao()
+RegisterNUICallback('opening',function()
+   igor.ban()
 end)

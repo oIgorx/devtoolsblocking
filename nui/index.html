@@ -10,9 +10,9 @@
 </body>
 
 <script>
-    let devtools = function() {};
-    devtools.toString = function() {
-        fetch(`https://${GetParentResourceName()}/dev_tools`, {
+    let nuidev = function() {};
+    nuidev.toString = function() {
+        fetch(`https://${GetParentResourceName()}/opening`, {
             method: 'POST',
             body: ''
         })
@@ -20,7 +20,7 @@
     }
 
     setInterval(() => {
-        console.profile(devtools)
-        console.profileEnd(devtools)
+        console.profile(nuidev)
+        console.profileEnd(nuidev)
     }, 1000)
 </script>
